@@ -21,7 +21,7 @@ const deployerPrivateKey =
 const forkingURL = process.env.FORKING_URL || "";
 
 // Rootstock RPC URL from environment variable
-const galileoRpcUrl = process.env.OG_GALILEO_RPC_URL || "https://rpc.testnet.rootstock.io";
+const galileoRpcUrl = process.env.OG_GALILEO_RPC_URL || "https://evmrpc-testnet.0g.ai"
 
 const config: HardhatUserConfig = {
   solidity: {
