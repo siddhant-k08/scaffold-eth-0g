@@ -20,8 +20,8 @@ const deployerPrivateKey =
 // forking rpc url
 const forkingURL = process.env.FORKING_URL || "";
 
-// Rootstock RPC URL from environment variable
-const galileoRpcUrl = process.env.OG_GALILEO_RPC_URL || "https://evmrpc-testnet.0g.ai"
+// 0G RPC URL from environment variable
+const galileoRpcUrl = process.env.ZERO_G_RPC_URL || "https://evmrpc-testnet.0g.ai"
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -66,8 +66,8 @@ const config: HardhatUserConfig = {
   },
   sourcify: {
     enabled: false,
-    apiUrl: "https://sourcify-api.rootstock.io",
-    browserUrl: "https://explorer.testnet.rootstock.io",
+    // apiUrl: "https://sourcify.dev/server",
+    // browserUrl: "https://chainscan-galileo.0g.ai",
   },
 };
 

@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH-Rootstock</span>
+            <span className="block text-4xl font-bold">Scaffold-ETH-0G</span>
           </h1>
           <div className="flex justify-center items-center space-x-2 flex-col sm:flex-row">
             <p className="my-2 font-medium">Connected Address:</p>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               <BoltIcon className="h-8 w-8" />
               <p>
                 Get testnet funds from the{" "}
-                <Link href="https://faucet.rootstock.io/" passHref className="link">
+                <Link href="https://faucet.0g.ai/" passHref className="link">
                   {/* TODO: Add Faucet link here */}Faucet
                 </Link>{" "}
               </p>
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
               <MagnifyingGlassIcon className="h-8 w-8" />
               <p>
                 Explore your transactions with the{" "}
-                <Link href="https://explorer.testnet.rootstock.io/" passHref className="link" target="_blank">
+                <Link href="https://explorer.0g.ai/" passHref className="link" target="_blank">
                   Block Explorer
                 </Link>{" "}
                 tab.
@@ -74,8 +74,8 @@ const Home: NextPage = () => {
               <BookOpenIcon className="h-8 w-8" />
               <p>
                 Learn more about{" "}
-                <Link href="https://dev.rootstock.io/" passHref className="link" target="_blank">
-                  Rootstock
+                <Link href="https://dev.0g.ai/" passHref className="link" target="_blank">
+                  0G
                 </Link>
                 .
               </p>

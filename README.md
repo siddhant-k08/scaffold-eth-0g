@@ -1,12 +1,12 @@
-# 🏗 Scaffold-ETH-Rootstock
+# 🏗 Scaffold-ETH-0G
 
 <div align="center">
-<img src="packages/nextjs/public/rootstock.svg" width="200" />
+<img src="packages/nextjs/public/0g.svg" width="200" />
 </div>
 
 <h4 align="center">
-  <a href="https://docs.rootstock.io">Rootstock Documentation</a>
-  | <a href="https://github.com/siddhant-k08/scaffold-eth-rootstock/issues">Report Issue</a>
+  <a href="https://docs.0g.ai">0G Documentation</a>
+  | <a href="https://github.com/siddhant-k08/scaffold-eth-0g/issues">Report Issue</a>
 </h4>
 
 ⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
@@ -15,7 +15,7 @@
 -   🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
 -   🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
 -   🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
--   🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Rootstock network.
+-   🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the 0G network.
 
 ![Front Page](./packages/nextjs/public/front_page.png)
 
@@ -34,13 +34,13 @@ To get started, follow the steps below:
 1. Clone this repo & install dependencies
 
 ```sh
-git clone https://github.com/siddhant-k08/scaffold-eth-rootstock.git
+git clone https://github.com/siddhant-k08/scaffold-eth-0g.git
 ```
 
 2. Open the project directory and install dependencies
 
 ```sh
-cd scaffold-eth-rootstock && yarn install
+cd scaffold-eth-0g && yarn install
 ```
 
 3. Setup `.env` file for Hardhat:
@@ -49,10 +49,10 @@ Make a copy of `.env.example` in `packages/hardhat` folder, name it `.env` and e
 
 ```
 DEPLOYER_PRIVATE_KEY=
-ROOTSTOCK_RPC_URL=https://rpc.testnet.rootstock.io/YOUR_API_KEY_HERE
+ZERO_G_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
 ```
 
-4. Deploying smart contracts on Rootstock:
+4. Deploying smart contracts on 0G:
 
 Once the `.env` file is setup, you can now run the below command in your terminal.
 
@@ -60,7 +60,7 @@ Once the `.env` file is setup, you can now run the below command in your termina
 yarn deploy
 ```
 
-This command deploys a test smart contract to the Rootstock testnet network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
+This command deploys a test smart contract to the 0G testnet network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
 
 5. Setup `.env` file for Next.js app (optional):
 
@@ -68,7 +68,7 @@ Make a copy of `.env.example` in `packages/nextjs` folder, name it `.env` and en
 
 ```
 NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=
-NEXT_PUBLIC_ROOTSTOCK_RPC_URL=https://rpc.testnet.rootstock.io/YOUR_API_KEY_HERE
+NEXT_PUBLIC_ZERO_G_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
 ```
 
 6. On a second terminal, start your NextJS app:
@@ -86,22 +86,22 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 -   Edit your deployment scripts in `packages/hardhat/deploy`
 -   Edit your smart contract test in: `packages/hardhat/test`. To run test use `yarn hardhat:test`
 
-## Rootstock Network Configuration
+## 0G Network Configuration
 
-This scaffold is configured for Rootstock Testnet by default. Here are the network details:
+This scaffold is configured for 0G Testnet by default. Here are the network details:
 
-- **Network Name**: Rootstock Testnet
+- **Network Name**: 0G Testnet
 - **Chain ID**: 31
-- **Currency**: tRBTC (Test Rootstock Bitcoin)
-- **RPC URL**: `https://rpc.testnet.rootstock.io`
-- **Explorer**: `https://explorer.testnet.rootstock.io`
+- **Currency**: 0G (Test 0G Token)
+- **RPC URL**: `https://evmrpc-testnet.0g.ai`
+- **Explorer**: `https://explorer.0g.ai`
 
-### Getting Rootstock Testnet tRBTC
+### Getting 0G Testnet Tokens
 
-You can get testnet tRBTC from the [Rootstock Faucet](https://faucet.rootstock.io/).
+You can get testnet tokens from the [0G Faucet](https://faucet.0g.ai/).
 
 ## Documentation
 
-Visit our [Rootstock docs](https://docs.rootstock.io) to learn how to start building with Rootstock.
+Visit our [0G docs](https://docs.0g.ai) to learn how to start building with 0G.
 
 To know more about Scaffold-ETH features, check out their [website](https://scaffoldeth.io).

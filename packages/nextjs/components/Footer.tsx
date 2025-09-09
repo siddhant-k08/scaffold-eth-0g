@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { RootstockLogo } from "./assets/RootstockLogo";
+import { 0gLogo } from "./assets/0gLogo";
 import { hardhat } from "viem/chains";
 import { CurrencyDollarIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/outline";
@@ -46,7 +46,7 @@ export const Footer = () => {
         <ul className="menu menu-horizontal w-full">
           <div className="flex justify-center items-center gap-2 text-sm w-full">
             <div className="text-center">
-              {/* TODO: add the scaffold-eth-rootstock repo link */}
+              {/* TODO: add the scaffold-eth-0g repo link */}
               <a href="https://github.com/scaffold-eth/se-2" target="_blank" rel="noreferrer" className="link">
                 Fork me
               </a>
@@ -68,12 +68,12 @@ export const Footer = () => {
               <p>and</p>
               <a
                 className="flex justify-center items-center gap-1"
-                href="https://rootstock.io/"
+                href="https://0g.ai/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <RootstockLogo className="w-3 h-5 pb-1" />
-                <span className="link">Rootstock</span>
+                <0gLogo className="w-3 h-5 pb-1" />
+                <span className="link">0G</span>
               </a>
             </div>
             <span>·</span>
