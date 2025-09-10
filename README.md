@@ -52,7 +52,7 @@ DEPLOYER_PRIVATE_KEY=
 ZERO_G_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
 ```
 
-4. Deploying smart contracts on 0G:
+4. Deploying smart contracts on [0G](https://0g.ai/):
 
 Once the `.env` file is setup, you can now run the below command in your terminal.
 

@@ -21,7 +21,7 @@ const deployerPrivateKey =
 const forkingURL = process.env.FORKING_URL || "";
 
 // 0G RPC URL from environment variable
-const galileoRpcUrl = process.env.ZERO_G_RPC_URL || "https://evmrpc-testnet.0g.ai"
+const OGRpcUrl = process.env.OG_RPC_URL || "https://evmrpc-testnet.0g.ai"
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -38,7 +38,7 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  defaultNetwork: "0g-testnet",
+  defaultNetwork: "OGTestnet",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -54,8 +54,8 @@ const config: HardhatUserConfig = {
         enabled: process.env.MAINNET_FORKING_ENABLED === "true",
       },
     },
-    "0g-testnet": {
-      url: galileoRpcUrl,
+    "OGTestnet": {
+      url: OGRpcUrl,
       accounts: [deployerPrivateKey],
       chainId: 16601,
     },
