@@ -20,9 +20,11 @@ const wallets = [
   coinbaseWallet,
   rainbowWallet,
   safeWallet,
-  ...(!targetNetworks.some(network => network.id !== (chains.hardhat as chains.Chain).id) || !onlyLocalBurnerWallet
-    ? [rainbowkitBurnerWallet]
-    : []),
+  // Burner wallet is only available for local hardhat network
+  // Since we're using 0G testnet, we disable it
+  // ...(targetNetworks.some(network => network.id === chains.hardhat.id) && onlyLocalBurnerWallet
+  //   ? [rainbowkitBurnerWallet]
+  //   : []),
 ];
 
 /**

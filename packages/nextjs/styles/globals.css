@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* 0G Design System Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 :root,
 [data-theme] {
   background: oklch(var(--b2));
@@ -9,6 +12,7 @@
 
 body {
   min-height: 100vh;
+  font-family: "Inter", "Regola Pro", sans-serif;
 }
 
 h1,
@@ -16,17 +20,89 @@ h2,
 h3,
 h4 {
   margin-bottom: 0.5rem;
-  line-height: 1;
+  line-height: 1.2;
+  font-family: "Inter", "Regola Pro", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 p {
   margin: 1rem 0;
+  font-family: "Inter", "Regola Pro", sans-serif;
+  font-weight: 400;
+}
+
+code,
+pre {
+  font-family: "Geist Mono", monospace;
 }
 
 .btn {
   @apply shadow-md;
+  font-family: "Inter", "Regola Pro", sans-serif;
+  font-weight: 500;
 }
 
 .btn.btn-ghost {
   @apply shadow-none;
+}
+
+/* 0G Design System Custom Classes */
+.text-regola {
+  font-family: "Inter", "Regola Pro", sans-serif;
+}
+
+.text-geist-mono {
+  font-family: "Geist Mono", monospace;
+}
+
+.bg-0g-black {
+  background-color: #000000;
+}
+
+.bg-0g-white {
+  background-color: #fefefe;
+}
+
+.bg-0g-gray-1 {
+  background-color: #e5e5e5;
+}
+
+.text-0g-black {
+  color: #000000;
+}
+
+.text-0g-white {
+  color: #fefefe;
+}
+
+.border-0g-purple-shade {
+  border-color: #9200e1;
+}
+
+.bg-0g-purple-shade {
+  background-color: #9200e1;
+}
+
+.text-0g-purple-shade {
+  color: #9200e1;
 }

@@ -8,7 +8,7 @@ export const OGTestnet = defineChain({
   rpcUrls: {
     default: {
       // TODO: Add 0G RPC URL
-      http: [process.env.NEXT_PUBLIC_OG_RPC_URL || "https://evmrpc-testnet.0g.ai"],
+      http: [process.env.NEXT_PUBLIC_ZERO_G_RPC_URL || "https://evmrpc-testnet.0g.ai"],
     },
   },
   blockExplorers: {

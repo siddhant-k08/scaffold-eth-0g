@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { 0gLogo } from "./assets/0gLogo";
+import { RootstockLogo } from "./assets/RootstockLogo";
 import { hardhat } from "viem/chains";
 import { CurrencyDollarIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/outline";
@@ -18,13 +18,13 @@ export const Footer = () => {
   const isLocalNetwork = targetNetwork.id === hardhat.id;
 
   return (
-    <div className="min-h-0 py-5 px-1 mb-11 lg:mb-0">
+    <div className="min-h-0 py-5 px-1 mb-11 lg:mb-0 bg-0g-white">
       <div>
         <div className="fixed flex justify-between items-center w-full z-10 p-4 bottom-0 left-0 pointer-events-none">
           <div className="flex flex-col md:flex-row gap-2 pointer-events-auto">
             {nativeCurrencyPrice > 0 && (
               <div>
-                <div className="btn btn-primary btn-sm font-normal gap-1 cursor-auto">
+                <div className="btn bg-0g-purple-shade text-0g-white hover:bg-0g-purple-1 btn-sm font-normal gap-1 cursor-auto border-0">
                   <CurrencyDollarIcon className="h-4 w-4" />
                   <span>{nativeCurrencyPrice.toFixed(2)}</span>
                 </div>
@@ -33,7 +33,11 @@ export const Footer = () => {
             {isLocalNetwork && (
               <>
                 <Faucet />
-                <Link href="/blockexplorer" passHref className="btn btn-primary btn-sm font-normal gap-1">
+                <Link
+                  href="/blockexplorer"
+                  passHref
+                  className="btn bg-0g-purple-shade text-0g-white hover:bg-0g-purple-1 btn-sm font-normal gap-1 border-0"
+                >
                   <MagnifyingGlassIcon className="h-4 w-4" />
                   <span>Block Explorer</span>
                 </Link>
@@ -44,17 +48,21 @@ export const Footer = () => {
       </div>
       <div className="w-full">
         <ul className="menu menu-horizontal w-full">
-          <div className="flex justify-center items-center gap-2 text-sm w-full">
+          <div className="flex justify-center items-center gap-2 text-sm w-full text-0g-black">
             <div className="text-center">
-              {/* TODO: add the scaffold-eth-0g repo link */}
-              <a href="https://github.com/scaffold-eth/se-2" target="_blank" rel="noreferrer" className="link">
+              <a
+                href="https://github.com/scaffold-eth/se-2"
+                target="_blank"
+                rel="noreferrer"
+                className="link text-0g-purple-shade hover:text-0g-purple-1 font-medium"
+              >
                 Fork me
               </a>
             </div>
-            <span>·</span>
+            <span className="text-0g-gray-1">·</span>
             <div className="flex justify-center items-center gap-2">
-              <p className="m-0 text-center">
-                Built with <HeartIcon className="inline-block h-4 w-4" /> at
+              <p className="m-0 text-center text-0g-black">
+                Built with <HeartIcon className="inline-block h-4 w-4 text-0g-purple-shade" /> at
               </p>
               <a
                 className="flex justify-center items-center gap-1"
@@ -63,23 +71,27 @@ export const Footer = () => {
                 rel="noreferrer"
               >
                 <BuidlGuidlLogo className="w-3 h-5 pb-1" />
-                <span className="link">BuidlGuidl</span>
+                <span className="link text-0g-purple-shade hover:text-0g-purple-1 font-medium">BuidlGuidl</span>
               </a>
-              <p>and</p>
+              <p className="text-0g-black">and</p>
               <a
                 className="flex justify-center items-center gap-1"
                 href="https://0g.ai/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <0gLogo className="w-3 h-5 pb-1" />
+                <RootstockLogo className="w-3 h-5 pb-1" />
                 <span className="link">0G</span>
               </a>
             </div>
-            <span>·</span>
+            <span className="text-0g-gray-1">·</span>
             <div className="text-center">
-              <a href="https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA" target="_blank" rel="noreferrer" className="link">
-                {/* TODO: Add link to github repo to create issue */}
+              <a
+                href="https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA"
+                target="_blank"
+                rel="noreferrer"
+                className="link text-0g-purple-shade hover:text-0g-purple-1 font-medium"
+              >
                 Support
               </a>
             </div>
