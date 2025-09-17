@@ -106,6 +106,21 @@ You can get testnet tokens from the [0G Faucet](https://faucet.0g.ai/).
 - The faucet provides free testnet tokens for development and testing purposes
 - Make sure to use the correct network (0G Testnet with Chain ID 16601) when requesting tokens
 
+## Troubleshooting
+
+### Common Issues
+
+1. **Connection Issues**: Make sure you're connected to the correct network (0G Testnet, Chain ID: 16601)
+2. **RPC Errors**: Verify your RPC URL in the environment variables is correct and includes your API key
+3. **Transaction Failures**: Ensure you have sufficient 0G testnet tokens for gas fees
+4. **Contract Deployment**: Check that your private key has enough 0G tokens for deployment
+
+### Getting Help
+
+- Check the [0G Documentation](https://docs.0g.ai) for network-specific information
+- Visit the [Scaffold-ETH Documentation](https://docs.scaffoldeth.io) for framework-specific help
+- Open an issue on [GitHub](https://github.com/siddhant-k08/scaffold-eth-0g/issues) for project-specific problems
+
 ## Documentation
 
 Visit our [0G docs](https://docs.0g.ai) to learn how to start building with 0G.
