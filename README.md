@@ -99,7 +99,12 @@ This scaffold is configured for 0G Testnet by default. Here are the network deta
 
 ### Getting 0G Testnet Tokens
 
-You can get testnet tokens from the [0G Faucet](https://faucet.0g.ai/).
+You can get testnet tokens from the [0G Faucet](https://faucet.0g.ai/). 
+
+**Important Notes:**
+- You'll need 0G testnet tokens to deploy contracts and interact with the network
+- The faucet provides free testnet tokens for development and testing purposes
+- Make sure to use the correct network (0G Testnet with Chain ID 16601) when requesting tokens
 
 ## Documentation
 
