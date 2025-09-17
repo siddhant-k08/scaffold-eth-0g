@@ -9,13 +9,14 @@
   | <a href="https://github.com/siddhant-k08/scaffold-eth-0g/issues">Report Issue</a>
 </h4>
 
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
+⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript for 0G Testnet.
 
 -   ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
 -   🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
 -   🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
 -   🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
--   🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the 0G network.
+-   🔐 **0G Network Integration**: Seamlessly connect to different wallet providers and interact with the 0G Testnet.
+-   🌐 **0G Testnet Ready**: Pre-configured for 0G Testnet with Chain ID 16601 and proper RPC endpoints.
 
 ![Front Page](./packages/nextjs/public/front_page.png)
 
