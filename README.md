@@ -48,8 +48,8 @@ cd scaffold-eth-0g && yarn install
 Make a copy of `.env.example` in `packages/hardhat` folder, name it `.env` and enter the respective values
 
 ```
-DEPLOYER_PRIVATE_KEY=
-ZERO_G_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
+DEPLOYER_PRIVATE_KEY=your_private_key_here
+OG_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
 ```
 
 4. Deploying smart contracts on [0G](https://0g.ai/):
@@ -67,7 +67,7 @@ This command deploys a test smart contract to the 0G testnet network. The contra
 Make a copy of `.env.example` in `packages/nextjs` folder, name it `.env` and enter the respective values
 
 ```
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_wallet_connect_project_id
 NEXT_PUBLIC_ZERO_G_RPC_URL=https://evmrpc-testnet.0g.ai/YOUR_API_KEY_HERE
 ```
 
