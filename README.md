@@ -91,7 +91,7 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 This scaffold is configured for 0G Testnet by default. Here are the network details:
 
 - **Network Name**: 0G Testnet
-- **Chain ID**: 31
+- **Chain ID**: 16601
 - **Currency**: 0G (Test 0G Token)
 - **RPC URL**: `https://evmrpc-testnet.0g.ai`
 - **Explorer**: `https://explorer.0g.ai`
