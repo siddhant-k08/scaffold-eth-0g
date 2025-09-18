@@ -75,8 +75,8 @@ export const ContractInput = ({ setForm, form, stateObjectKey, paramType }: Cont
   return (
     <div className="flex flex-col gap-1.5 w-full">
       <div className="flex items-center ml-2">
-        {paramType.name && <span className="text-xs font-medium mr-2 leading-none">{paramType.name}</span>}
-        <span className="block text-xs font-extralight leading-none">{paramType.type}</span>
+        {paramType.name && <span className="text-xs font-medium mr-2 leading-none text-0g-black">{paramType.name}</span>}
+        <span className="block text-xs font-extralight leading-none text-0g-black">{paramType.type}</span>
       </div>
       {renderInput()}
     </div>
