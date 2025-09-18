@@ -42,7 +42,7 @@ export const HeaderMenuLinks = () => {
                 isActive
                   ? "bg-0g-purple-shade text-0g-white shadow-md"
                   : "text-0g-black hover:bg-0g-purple-1 hover:text-0g-white"
-              } focus:!bg-0g-purple-shade active:!text-0g-white py-2 px-4 text-sm rounded-lg gap-2 grid grid-flow-col font-medium transition-colors`}
+              } focus:!bg-0g-purple-shade active:!text-0g-white py-2 px-4 text-sm rounded-lg gap-2 flex items-center font-medium transition-colors`}
             >
               {icon}
               <span>{label}</span>
@@ -76,7 +76,7 @@ export const Header = () => {
               setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
             }}
           >
-            <Bars3Icon className="h-1/2" />
+            <Bars3Icon className="h-6 w-6" />
           </label>
           {isDrawerOpen && (
             <ul

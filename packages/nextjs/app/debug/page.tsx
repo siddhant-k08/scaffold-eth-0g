@@ -9,19 +9,19 @@ export const metadata = getMetadata({
 
 const Debug: NextPage = () => {
   return (
-    <>
-      <DebugContracts />
-      <div className="text-center mt-8 bg-secondary p-10">
-        <h1 className="text-4xl my-0">Debug Contracts</h1>
-        <p className="text-neutral">
+    <div className="flex flex-col min-h-screen">
+      <div className="text-center mt-8 bg-0g-purple-4 p-10">
+        <h1 className="text-4xl my-0 text-0g-black">Debug Contracts</h1>
+        <p className="text-0g-black">
           You can debug & interact with your deployed contracts here.
           <br /> Check{" "}
-          <code className="italic bg-base-300 text-base font-bold [word-spacing:-0.5rem] px-1">
+          <code className="italic bg-0g-gray-1 text-0g-black font-bold [word-spacing:-0.5rem] px-1">
             packages / nextjs / app / debug / page.tsx
           </code>{" "}
         </p>
       </div>
-    </>
+      <DebugContracts />
+    </div>
   );
 };
 
